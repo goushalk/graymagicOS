@@ -1,6 +1,6 @@
 # Graymagic
 
-`Graymagic` is a development/staging repo for a Hyprland desktop look built around soft grayscale foundations with stronger accent variants.
+`Graymagic` is a development/staging repo for a Hyprland desktop for Hackers to be productive and efficient.
 
 At the moment, this repository mainly serves as a visual preview space for the theme direction and its color moods. The screenshots below show the current variants that define the project style.
 
@@ -25,7 +25,7 @@ At the moment, this repository mainly serves as a visual preview space for the t
 
 ![Graymagic Forest](screenshots/graymagic_forest.jpeg)
 
-### Red
+### ImperialRed
 
 ![Graymagic Red](screenshots/graymagic_red.jpeg)
 
