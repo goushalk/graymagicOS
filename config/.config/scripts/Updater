@@ -1,0 +1,38 @@
+#!/usr/bin/bash
+set -euo pipefail
+
+DOTFILES_DIR="$HOME/dotfiles"
+REMOTE="origin"
+BRANCH="main"
+
+cd "$DOTFILES_DIR"
+
+git fetch "$REMOTE"
+
+LOCAL=$(git rev-parse @)
+REMOTE_HASH=$(git rev-parse "$REMOTE/$BRANCH")
+BASE=$(git merge-base @ "$REMOTE/$BRANCH")
+
+if [[ "$LOCAL" == "$REMOTE_HASH" ]]; then
+    gum style --foreground 10 "✔ Dotfiles already up to date."
+    exit 0
+fi
+
+if [[ "$LOCAL" != "$BASE" ]]; then
+    gum style --foreground 9 "✖ Local changes detected. Fix manually."
+    git status
+    exit 1
+fi
+
+gum style --bold "Commits to be applied:"
+git log --oneline "$LOCAL..$REMOTE_HASH" | gum pager
+
+gum style --bold "Diff preview:"
+git diff "$LOCAL..$REMOTE_HASH" | gum pager
+
+if gum confirm "Apply these updates?"; then
+    git pull --ff-only
+    gum style --foreground 10 "✔ Dotfiles updated successfully."
+else
+    gum style --foreground 11 "✖ Update cancelled."
+fi

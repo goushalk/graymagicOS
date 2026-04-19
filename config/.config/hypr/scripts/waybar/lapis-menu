@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+
+choice=$(gum choose \
+  "Logout" \
+  "Reboot" \
+  "Poweroff" \
+  "Btop" \
+  "Hyprpicker" \
+  "Reload Waybar" \
+  "Cancel" \
+  --header "System Menu"
+)
+
+case "$choice" in
+  "Logout")
+    wlogout
+    ;;
+  "Reboot")
+    systemctl reboot
+    ;;
+  "Poweroff")
+    systemctl poweroff
+    ;;
+  "Btop")
+    kitty --class btop -e btop
+    ;;
+  "Hyprpicker")
+    hyprpicker -a
+    ;;
+  "Reload Waybar")
+    pkill waybar && waybar &
+    ;;
+  *)
+    exit 0
+    ;;
+esac

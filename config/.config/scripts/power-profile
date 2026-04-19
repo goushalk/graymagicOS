@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+
+current=$(powerprofilesctl get)
+
+make_entry() {
+  local name="$1"
+  if [ "$name" = "$current" ]; then
+    printf "> %s\n" "$name"
+  else
+    printf "  %s\n" "$name"
+  fi
+}
+
+choice=$(printf "%s\n%s\n%s\n" \
+  "$(make_entry performance)" \
+  "$(make_entry balanced)" \
+  "$(make_entry power-saver)" |
+  fuzzel -d \
+    --prompt="" \
+    --placeholder="")
+
+[ -z "$choice" ] && exit 0
+
+# Strip marker
+choice="${choice#● }"
+choice="${choice#  }"
+
+case "$choice" in
+  performance|balanced|power-saver)
+    powerprofilesctl set "$choice"
+    ;;
+esac

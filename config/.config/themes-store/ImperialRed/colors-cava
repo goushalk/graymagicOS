@@ -1,0 +1,11 @@
+
+[color]
+background = 'default'
+foreground = '#E5E5E7'
+
+gradient = 1
+gradient_color_1 = '#D1D1D6'   # Silver Silk
+gradient_color_2 = '#FF4D4D'   # Sunset Tint
+gradient_color_3 = '#ED2939'   # Imperial Red
+
+horizontal_gradient = 0

@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# Refresh sudo timestamp early so we don't fight stdin later
+sudo -v
+
+# Keep sudo alive while script runs (optional but nice)
+while true; do
+  sudo -v
+  sleep 60
+done &
+
+SUDO_KEEPALIVE_PID=$!
+
+cleanup() {
+  kill "$SUDO_KEEPALIVE_PID" 2>/dev/null || true
+}
+trap cleanup EXIT
+
+# Main flow
+yay -Slq \
+| fzf \
+    --multi \
+    --height=80% \
+    --reverse \
+    --preview 'yay -Si {}' \
+| xargs -r yay -S --needed --noconfirm

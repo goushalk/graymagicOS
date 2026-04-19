@@ -1,0 +1,51 @@
+
+# Imperial Red btop theme
+
+theme[main_bg]="#0B0B0C"        # Obsidian
+theme[main_fg]="#E5E5E7"        # Platinum
+theme[title]="#ED2939"          # Imperial Red
+theme[hi_fg]="#FFFFFF"          # Pure White
+theme[selected_bg]="#250A0A"    # Black Cherry
+theme[selected_fg]="#FFF5F5"    # Frost Red
+theme[inactive_fg]="#8E8E93"    # Slate Shadow
+theme[proc_misc]="#D1D1D6"      # Silver Silk
+
+# Boxes / outlines
+theme[cpu_box]="#545458"        # Gunmetal
+theme[mem_box]="#545458"
+theme[net_box]="#545458"
+theme[proc_box]="#545458"
+theme[div_line]="#2C2C2E"       # Carbon
+
+# CPU
+theme[cpu_start]="#FFB3B3"
+theme[cpu_mid]="#FF4D4D"
+theme[cpu_end]="#C41E3A"
+
+# Temp
+theme[temp_start]="#FFB3B3"
+theme[temp_mid]="#ED2939"
+theme[temp_end]="#800020"
+
+# Memory / disk
+theme[free_start]="#D1D1D6"
+theme[free_end]="#545458"
+
+theme[cached_start]="#FFB3B3"
+theme[cached_end]="#800020"
+
+theme[used_start]="#FF4D4D"
+theme[used_end]="#4A0404"
+
+# Network
+theme[download_start]="#D1D1D6"
+theme[download_mid]="#FFB3B3"
+theme[download_end]="#ED2939"
+
+theme[upload_start]="#D1D1D6"
+theme[upload_mid]="#FF4D4D"
+theme[upload_end]="#C41E3A"
+
+# Alerts
+theme[warning]="#FF4D4D"
+theme[critical]="#ED2939"

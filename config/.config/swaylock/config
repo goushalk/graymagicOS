@@ -1,0 +1,85 @@
+#################################
+# CORE BEHAVIOR
+#################################
+daemonize
+show-failed-attempts
+ignore-empty-password
+
+grace=2
+grace-no-mouse
+grace-no-touch
+
+#################################
+# VISUAL EFFECTS (STEALTH)
+#################################
+effect-blur=13x13
+effect-vignette=0.5:0.5
+fade-in=0.0
+
+#################################
+# CLOCK / DATE
+#################################
+clock
+timestr=%H:%M
+datestr=%a, %B %e
+
+#################################
+# SCREENSHOT BACKGROUND
+#################################
+screenshot
+
+#################################
+# INDICATOR (TACTICAL RING)
+#################################
+indicator
+indicator-radius=200
+indicator-thickness=20
+
+#################################
+# FONTS
+#################################
+font=Inter
+
+#################################
+# BASE COLORS (DARK OPS)
+#################################
+color=0b0e14
+line-color=282A36
+inside-color=282A36
+separator-color=00000000
+text-color=F8F8F2
+
+#################################
+# HIGHLIGHTS
+#################################
+key-hl-color=50FA7B
+bs-hl-color=8BE9FD
+
+#################################
+# VERIFYING STATE (AUTH IN PROGRESS)
+#################################
+ring-ver-color=BD93F9
+line-ver-color=BD93F9
+inside-ver-color=282A36
+text-ver-color=8BE9FD
+
+#################################
+# WRONG PASSWORD (INTRUSION ALERT)
+#################################
+ring-wrong-color=FF5555
+line-wrong-color=282A36
+inside-wrong-color=282A36
+text-wrong-color=FF5555
+
+#################################
+# CLEAR / INPUT RESET
+#################################
+ring-clear-color=8BE9FD
+line-clear-color=8BE9FD
+inside-clear-color=282A36
+text-clear-color=8BE9FD
+
+#################################
+# CAPS LOCK WARNING (OPTIONAL)
+#################################
+text-caps-lock-color=""

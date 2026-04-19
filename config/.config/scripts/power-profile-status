@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+current=$(powerprofilesctl get)
+
+case "$current" in
+  performance)
+    echo " perf"
+    ;;
+  balanced)
+    echo "󱈑 bal"
+    ;;
+  power-saver)
+    echo "󱤅 save"
+    ;;
+esac

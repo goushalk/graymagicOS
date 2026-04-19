@@ -1,0 +1,12 @@
+cd ~/wallpapers || exit
+
+SELECTED_WALL=$(for a in *.jpg *.png; do
+  echo -en "$a\0icon\x1f$a\n"
+done | rofi -dmenu -show-icons \
+  -theme-str 'listview { columns: 3; } element-icon { size: 256px; }')
+
+[ -z "$SELECTED_WALL" ] && exit 0
+
+swww img "$SELECTED_WALL"
+matugen image "$SELECTED_WALL"
+pkill -SIGUSR2 waybar

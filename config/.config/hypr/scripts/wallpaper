@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+WALLPAPER_DIR="$HOME/wallpapers"
+
+chosen=$(ls "$WALLPAPER_DIR" | wofi --dmenu --prompt "Wallpaper")
+
+[ -z "$chosen" ] && exit 0
+
+# Set wallpaper
+
+swaybg -i "$WALLPAPER_DIR/$chosen" -m fill &
+
+# Regenerate colors (optional but recommended)
+matugen image "$WALLPAPER_DIR/$chosen" -m dark
+
+# Reload Waybar colors
+pkill -SIGUSR2 waybar

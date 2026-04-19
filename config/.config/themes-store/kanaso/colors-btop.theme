@@ -1,0 +1,77 @@
+# Kanso Dark - Zen
+# calm, muted, low-saturation btop theme
+
+theme[main_bg]="#0f1115"
+theme[main_fg]="#c8c093"
+theme[title]="#9da2af"
+theme[hi_fg]="#7aa2c7"
+theme[selected_bg]="#1a1d24"
+theme[selected_fg]="#c8c093"
+theme[inactive_fg]="#6b7089"
+
+theme[graph_text]="#9da2af"
+theme[meter_bg]="#14171d"
+theme[proc_misc]="#938aa9"
+
+# CPU
+theme[cpu_box]="#7aa2c7"
+theme[cpu_idle]="#3a3f4b"
+theme[cpu_user]="#7aa2c7"
+theme[cpu_nice]="#9bb4d6"
+theme[cpu_system]="#98bb6c"
+theme[cpu_iowait]="#c8c093"
+theme[cpu_irq]="#c4746e"
+theme[cpu_softirq]="#c4746e"
+theme[cpu_steal]="#6b91b6"
+
+# Memory
+theme[mem_box]="#98bb6c"
+theme[mem_used]="#98bb6c"
+theme[mem_cached]="#7aa2c7"
+theme[mem_available]="#6b7089"
+theme[mem_free]="#3a3f4b"
+
+# Swap
+theme[swap_box]="#938aa9"
+theme[swap_used]="#938aa9"
+theme[swap_free]="#3a3f4b"
+
+# Processes
+theme[proc_box]="#7aa2c7"
+theme[proc_user]="#7aa2c7"
+theme[proc_kernel]="#98bb6c"
+theme[proc_threads]="#9da2af"
+theme[proc_running]="#7aa2c7"
+theme[proc_sleeping]="#6b7089"
+theme[proc_stopped]="#c4746e"
+theme[proc_zombie]="#c4746e"
+
+# Network
+theme[net_box]="#7aa2c7"
+theme[net_upload]="#98bb6c"
+theme[net_download]="#7aa2c7"
+theme[net_local]="#6b7089"
+
+# Disks
+theme[disk_box]="#938aa9"
+theme[disk_read]="#7aa2c7"
+theme[disk_write]="#98bb6c"
+theme[disk_free]="#6b7089"
+theme[disk_used]="#c8c093"
+
+# Temp / Warnings
+theme[temp_box]="#c8c093"
+theme[temp_good]="#98bb6c"
+theme[temp_warn]="#e6c384"
+theme[temp_crit]="#c4746e"
+
+# Battery
+theme[battery_box]="#98bb6c"
+theme[battery_full]="#98bb6c"
+theme[battery_medium]="#e6c384"
+theme[battery_low]="#c4746e"
+
+# Misc
+theme[uptime]="#9da2af"
+theme[clock]="#7aa2c7"
+theme[background]="#0f1115"

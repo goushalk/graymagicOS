@@ -1,0 +1,93 @@
+@import "./colors.css";
+
+/* Reset */
+* {
+  all: unset;
+}
+
+/* Window overlay */
+window {
+  background-color: alpha(@scrim, 0.6);
+}
+
+/* ================= Buttons ================= */
+
+button {
+  background-color: @surface_container;
+  color: @on_surface;
+
+  border-radius: 14px;
+  padding: 26px;
+  margin: 14px;
+
+  background-repeat: no-repeat;
+  background-position: center 30%;
+  background-size: 32%;
+
+  border: 3px solid @outline;
+}
+
+/* Hover = brighter surface */
+button:hover {
+  background-color: @surface_container_high;
+}
+
+/* Keyboard focus */
+button:focus {
+  background-color: @primary_container;
+  color: @on_primary_container;
+  border-color: @primary_fixed;
+}
+
+/* Label */
+button label {
+  margin-top: 68px;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  color: inherit;
+}
+
+/* ================= Action colors ================= */
+
+/* LOCK – calm aqua */
+#lock {
+  background-image: url("./icons/lock_white.png");
+  border-color: @secondary;
+  color: @secondary_fixed;
+}
+
+/* SUSPEND – green */
+#suspend {
+  background-image: url("./icons/suspend_white.png");
+  border-color: @secondary_fixed;
+  color: @secondary_fixed;
+}
+
+/* HIBERNATE – blue */
+#hibernate {
+  background-image: url("./icons/hibernate_white.png");
+  border-color: @primary;
+  color: @primary_fixed;
+}
+
+/* LOGOUT – magenta */
+#logout {
+  background-image: url("./icons/logout_white.png");
+  border-color: @tertiary;
+  color: @tertiary_fixed;
+}
+
+/* REBOOT – bright blue */
+#reboot {
+  background-image: url("./icons/reboot_white.png");
+  border-color: @primary_fixed;
+  color: @primary_fixed;
+}
+
+/* SHUTDOWN – danger */
+#shutdown {
+  background-image: url("./icons/shutdown_white.png");
+  border-color: @error;
+  color: @error;
+}

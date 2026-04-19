@@ -1,0 +1,15 @@
+# Kanso Dark - Zen
+# calm, muted, low-saturation cava colors
+
+[colors]
+background = '#0f1115'
+foreground = '#c8c093'
+
+# Bar gradient (left → right)
+gradient = 1
+
+gradient_color_1 = '#3a3f4b'  # deep muted gray-blue
+gradient_color_2 = '#6b7089'  # soft slate
+gradient_color_3 = '#7aa2c7'  # cold zen blue
+gradient_color_4 = '#98bb6c'  # muted olive green
+gradient_color_5 = '#e6c384'  # soft sand highlight
