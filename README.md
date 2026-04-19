@@ -1,15 +1,16 @@
 # Graymagic
 
-`Graymagic` is a development/staging repo for a Hyprland desktop for Hackers to be productive and efficient.
+`Graymagic` is a development-stage Hyprland configuration for hackers who care about productivity, speed, and efficient workflows.
 
-At the moment, this repository mainly serves as a visual preview space for the theme direction and its color moods. The screenshots below show the current variants that define the project style.
+It is built for terminal-heavy work, keyboard-driven navigation, and long coding sessions where the desktop should stay sharp, calm, and out of the way. The screenshots below show the current visual variants of the setup.
 
-## Theme Direction
+## Philosophy
 
-- Hyprland-focused desktop styling
-- Minimal, muted base palette
-- Accent-driven variants for different moods
-- Early-stage repo intended for iteration and previewing
+- Built for productive Hyprland workflows
+- Designed for hackers and keyboard-first users
+- Minimal visual noise with a focused grayscale base
+- Accent variants that keep the setup expressive without hurting usability
+- Early-stage repo with active iteration
 
 ## Screenshot Gallery
 
@@ -25,10 +26,10 @@ At the moment, this repository mainly serves as a visual preview space for the t
 
 ![Graymagic Forest](screenshots/graymagic_forest.jpeg)
 
-### ImperialRed
+### Imperial Red
 
 ![Graymagic Red](screenshots/graymagic_red.jpeg)
 
 ## Status
 
-This repo is still in an early dev state. Expect the structure, naming, and automation around the setup to evolve as the project is cleaned up and expanded.
+This repo is still evolving. The current focus is on shaping a hacker-first Hyprland environment that feels efficient in daily use, with structure and automation expected to expand over time.
